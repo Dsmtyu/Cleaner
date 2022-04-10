@@ -1,5 +1,5 @@
 @echo off
-echo 正在清除系统垃圾文件，请稍等......
+echo 正在清除系统垃圾文件，请稍等...
 del /f /s /q %systemdrive%\*.tmp
 del /f /s /q %systemdrive%\*._mp
 del /f /s /q %systemdrive%\*.log
@@ -23,5 +23,7 @@ del /f /q %userprofile%\cookies\*.*
 del /f /q %userprofile%\recent\*.*
 del /f /s /q "%userprofile%\Local Settings\Temp\*.*"
 del /f /s /q "%userprofile%\recent\*.*"
-echo 清除系统垃圾文件完成！
+echo 清除系统垃圾文件完成...
+echo 正在刷新网络配置...
+ipconfig/flushdns
 pause
