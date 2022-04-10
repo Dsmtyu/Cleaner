@@ -8,11 +8,19 @@ del /f /s /q %systemdrive%\*.chk
 del /f /s /q %systemdrive%\*.old
 del /f /s /q %systemdrive%\recycled\*.*
 del /f /s /q %windir%\*.bak
-del /f /s /q %windir%\prefetch\*.*
+del /f /s /q %windir%\Prefetch
+del /f /s /q %windir%\System32\LogFiles
+del /f /s /q %windir%\Temp
+del /f /s /q %windir%\Help
+del /f /s /q %windir%\SoftwareDistribution
 rd /s /q %windir%\temp & md %windir%\temp
+del %userprofile%\.condarc
+del %userprofile%\.git-for-windows-updater
+del %userprofile%\.bash_history
+del %userprofile%\.gitconfig
+del %userprofile%\.viminfo
 del /f /q %userprofile%\cookies\*.*
 del /f /q %userprofile%\recent\*.*
-del /f /s /q "%userprofile%\Local Settings\Temporary Internet Files\*.*"
 del /f /s /q "%userprofile%\Local Settings\Temp\*.*"
 del /f /s /q "%userprofile%\recent\*.*"
 echo 清除系统垃圾文件完成！
