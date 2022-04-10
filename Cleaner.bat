@@ -1,3 +1,4 @@
+% Update by Albert-wuchenyu 2022/4/10 %
 @echo off
 echo 正在清除系统垃圾文件，请稍等...
 del /f /s /q %systemdrive%\*.tmp
