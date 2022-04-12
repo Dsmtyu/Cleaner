@@ -1,20 +1,20 @@
 % Update by Albert-wuchenyu 2022/4/10 %
 @echo off
-echo *ÇåÀíÎÄ¼ş¼Ğ(1)
-echo *Ë¢ĞÂÍøÂçÅäÖÃ(2)
+echo *æ¸…ç†æ–‡ä»¶(1)
+echo *åˆ·æ–°ç½‘ç»œé…ç½®(2)
 echo -------------------------------------------
-choice /C 123 /M "Ñ¡Ôñ(3ÎªÈ¡Ïû): "
+choice /C 123 /M "é€‰æ‹©(3ä¸ºå–å–æ¶ˆ): "
 if %errorlevel%==1 goto clean
 if %errorlevel%==2 goto ipconfig
 if %errorlevel%==3 goto pau
 :clean
-	echo È·¶¨ÇåÀíÒÔÏÂÎÄ¼ş¼Ğ£¿£¨²»¿É»Ö¸´£©
-	echo C:\,C:\Windows\,C:\User\ÓÃ»§Ãû\
-	choice /C YN /CS /M "È·¶¨(Y/N): "	
+	echo ç¡®å®šæ¸…ç†ä»¥ä¸‹æ–‡ä»¶å¤¹ï¼Ÿï¼ˆä¸å¯æ¢å¤ï¼‰
+	echo C:\,C:\Windows\,C:\User\ç”¨æˆ·å\
+	choice /C YN /CS /M "ç¡®å®š(Y/N): "	
 	if %errorlevel%==1 goto cle
 	if %errorlevel%==2 goto pau
 	:cle
-		echo ÕıÔÚÇå³ıÏµÍ³À¬»øÎÄ¼ş£¬ÇëÉÔµÈ...
+		echo æ­£åœ¨æ¸…é™¤ç³»ç»Ÿåƒåœ¾æ–‡ä»¶ï¼Œè¯·ç¨ç­‰...
 		del /f /s /q %systemdrive%\*.tmp
 		del /f /s /q %systemdrive%\*._mp
 		del /f /s /q %systemdrive%\*.log
@@ -38,14 +38,14 @@ if %errorlevel%==3 goto pau
 		del /f /q %userprofile%\recent\*.*
 		del /f /s /q "%userprofile%\Local Settings\Temp\*.*"
 		del /f /s /q "%userprofile%\recent\*.*"
-		echo Çå³ıÏµÍ³À¬»øÎÄ¼şÍê³É...
+		echo æ¸…é™¤ç³»ç»Ÿåƒåœ¾æ–‡ä»¶å®Œæˆ...
 	rem exit /b 0
 
 :ipconfig
-	echo ÕıÔÚË¢ĞÂÍøÂçÅäÖÃ...
+	echo æ­£åœ¨åˆ·æ–°ç½‘ç»œé…ç½®...
 	ipconfig/flushdns
 	pause
 
 :pa
-	echo ÒÑÍË³ö
+	echo å·²é€€å‡º
 	pause
