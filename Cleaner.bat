@@ -1,3 +1,35 @@
+::[Bat To Exe Converter]
+::
+::YAwzoRdxOk+EWAjk
+::fBw5plQjdCyDJGyX8VAjFJKMjUmvPWWGKbsZzPry+e+7JLv60iP8RKjSzpybItww5kDle5M/6mpbm8ANCx5kXR6ubwExuyBLtWvl
+::YAwzuBVtJxjWCl3EqQJgSA==
+::ZR4luwNxJguZRRnk
+::Yhs/ulQjdF+5
+::cxAkpRVqdFKZSDk=
+::cBs/ulQjdF+5
+::ZR41oxFsdFKZSDk=
+::eBoioBt6dFKZSDk=
+::cRo6pxp7LAbNWATEpCI=
+::egkzugNsPRvcWATEpCI=
+::dAsiuh18IRvcCxnZtBJQ
+::cRYluBh/LU+EWAnk
+::YxY4rhs+aU+JeA==
+::cxY6rQJ7JhzQF1fEqQJQ
+::ZQ05rAF9IBncCkqN+0xwdVs0
+::ZQ05rAF9IAHYFVzEqQJQ
+::eg0/rx1wNQPfEVWB+kM9LVsJDGQ=
+::fBEirQZwNQPfEVWB+kM9LVsJDGQ=
+::cRolqwZ3JBvQF1fEqQJQ
+::dhA7uBVwLU+EWDk=
+::YQ03rBFzNR3SWATElA==
+::dhAmsQZ3MwfNWATElA==
+::ZQ0/vhVqMQ3MEVWAtB9wSA==
+::Zg8zqx1/OA3MEVWAtB9wSA==
+::dhA7pRFwIByZRRnk
+::YB416Ek+ZW8=
+::
+::
+::978f952a14a936cc963da21a135fa983
 % Update by Albert-wuchenyu 2022/4/10 %
 @echo off
 echo *清理文件(1)
@@ -44,8 +76,8 @@ if %errorlevel%==3 goto pau
 :ipconfig
 	echo 正在刷新网络配置...
 	ipconfig/flushdns
-	pause
+	rem exit /b 0
 
 :pa
-	echo 已退出
+	echo 已退�?
 	pause
