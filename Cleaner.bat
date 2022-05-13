@@ -1,16 +1,18 @@
-% Update by Albert-wuchenyu 2022/4/12 %
+% Update by Dsmtyu 2022/5/13 %
 @echo off
 :cleaner
     cls
 	echo *清理文件(1)
 	echo *刷新网络配置(2)
 	echo *杀死进程(3)
+	echo *压缩包转图片(4)
 	echo -------------------------------------------
-	choice /C 123C /M "选择(C为取取消): "
+	choice /C 1234C /M "选择(C为取取消): "
 	if %errorlevel%==1 goto clean
 	if %errorlevel%==2 goto ipconfig
 	if %errorlevel%==3 goto kill
-	if %errorlevel%==4 goto pau
+	if %errorlevel%==4 goto ziptoimg
+	if %errorlevel%==5 goto pau
 	:clean
 		echo 确定清理以下文件夹？（不可恢复）
 		echo C:\,C:\Windows\,C:\User\用户名\
@@ -81,6 +83,15 @@
 			taskkill /f /pid !pid!
 		)
         pause
+		goto cleaner
+
+	:ziptoimg
+		::压缩包转图片
+		set /p pic_1="图片路径或名称:"
+		set /p file="压缩文件路径或名称:"
+		set /p pic_2="输出图片名称:"
+		copy /b %pic_1%+%file% %pic_2%
+		pause
 		goto cleaner
 
 :pau
